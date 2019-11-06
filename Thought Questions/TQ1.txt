@@ -1,0 +1,17 @@
+Thought Questions 1
+Ziming Fu, 1370023
+
+[Preface] After reading the Preface, I notice that for prediction of the real world problems, a modifications to the linear functions 
+(complex non-linear functions as mentioned, might be logisitic Regression?) would generally make more accurate predictions. 
+I wonder is it always true? Do we really need to make complex non-linear model for all real world problem? Would it be more accurate 
+in some situation to use something like a multiple linear Regression?  Also, why would we be fascinated about building a perfect model? Can't we just
+use some algorithm like k-nearest Neighbors?  might due to the issue of saving memory, that we don't often have enough memory for whole data set?
+
+
+[Chapter 2] After reading this chapter, I got the idea we need to do optimization, trying to minimize the squared differences(a loss function?) between targets and 
+the samples make our prediction approaching to more-accurate.  So, we need to find the optimal function.  However why would we prefer gradien descent when we can 
+simply use closed form mathmatics?  Lets say we can use statistic formulas, slope =  the correlation times the ratio of the standard deviation of Y to the standard deviation of X
+also, intercept = the mean of Y minus the slope coefficient times the mean of X.  The reason might be models with two parameters are just too easy for the real world problems?
+I do not know if there are higher level stats formulas for complex model, but the iterations for gradien descent seems complex enought to me (lots computations on derivatives! maybe need very expensive gpu)
+Is there anything better?
+

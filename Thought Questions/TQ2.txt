@@ -1,0 +1,15 @@
+Thought Questions 2
+Ziming Fu, 1370023
+
+[Chapter 5] After reading the chapter 5, I acknowledge that two of the most common regularization technique we used are L1(Lasso Regression) and L2(Ridge Regression).  
+I'm wondering what are the differences between these two technique?  Also, which technique performs better for overfitting?  The intuitive difference from the 
+mathematical representation would be that L2 use the squared magnitude.  However L1 use the absolute value of magnitude. Does it implies that, if we consider them as priors, 
+L2 generally punishes large values more?  Also, I do notice that L2 is differentiable, while, the derivative of L1 is always constant. Does it means we should always use L2 
+when we using any gradient-based approaches?  What situation is best to use L1 instead of L2?
+
+
+[Chapter 6] After reading the chapter 6, I'm wondering What are the advantages and disadvantage of mini-batch SGD over SDG with one sample?  How does mini-batches help? 
+From my understanding of the reading notes, mini-batch is just an idea that we split the sample into smaller batches, and thus we can updates more frequent?
+I can imaging the higher update frequency would benefit for a more reliable convergence, and maybe avoid to stuck at the local minima.  However, how is the batched updates more
+efficient than normal SDG?  I thought we doing more updates.  Also a downside would be we have an additional hyperparameter to play with.  Wouldn't it cost more if we implement
+grid search or random search for best mini-batch size?
