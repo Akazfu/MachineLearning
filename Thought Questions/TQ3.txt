@@ -1,0 +1,13 @@
+Thought Questions 3
+Ziming Fu, 1370023
+
+[Chapter 8] After reading the chapter 8, I'm still confused about why do we consider the Logistic regression as a linear model, despite the fact we used the sigmoid function
+which is an non-linear function.  The reason might be that the logistic regression still in form of the generalized linear model?  The outcome is still very depended
+on the sum of the inputs and the parameters.  Also, We just used the feature of the sigmoid function to help us bound the outcome between 0 and 1.  Thus we can return the 
+conditional probabilities of the predictions.  But, why do we prefer the sigmoid fuction?  How about relu for the logistic regression?
+
+[Chapter 9] After reading the chapter 9, I acknowledge that the backpropagation algorithm and the stochastic gradient descent are used together on non-convex objective to 
+helps reduce the error function and updates the weight through iterations.  But how do we deal with the vanishing gradient problem while using backpropagation and SGD?  
+According to my reading the vanishing gradient problem happens when the gradient diminishes dramatically as it is propagated backward through the network. 
+The error may be so small by the time it reaches layers close to the input of the model that it may have very little effect.  Some method I came up with is to use some sort of 
+initialization like Xavier(initializing better random weights).  What are some other techniques we can use to avoid vanighing gradient problem?
